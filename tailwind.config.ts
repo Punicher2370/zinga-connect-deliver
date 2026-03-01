@@ -13,6 +13,10 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        display: ["'Bebas Neue'", "sans-serif"],
+        body: ["'Poppins'", "sans-serif"],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -47,6 +51,19 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        zinga: {
+          orange: "hsl(var(--zinga-orange))",
+          "orange-dark": "hsl(var(--zinga-orange-dark))",
+          "orange-light": "hsl(var(--zinga-orange-light))",
+          green: "hsl(var(--zinga-green))",
+          gold: "hsl(var(--zinga-gold))",
+          purple: "hsl(var(--zinga-purple))",
+          dark: "hsl(var(--zinga-dark))",
+          "dark-2": "hsl(var(--zinga-dark-2))",
+          "dark-3": "hsl(var(--zinga-dark-3))",
+          "dark-4": "hsl(var(--zinga-dark-4))",
+          light: "hsl(var(--zinga-light))",
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
@@ -65,20 +82,12 @@ export default {
       },
       keyframes: {
         "accordion-down": {
-          from: {
-            height: "0",
-          },
-          to: {
-            height: "var(--radix-accordion-content-height)",
-          },
+          from: { height: "0" },
+          to: { height: "var(--radix-accordion-content-height)" },
         },
         "accordion-up": {
-          from: {
-            height: "var(--radix-accordion-content-height)",
-          },
-          to: {
-            height: "0",
-          },
+          from: { height: "var(--radix-accordion-content-height)" },
+          to: { height: "0" },
         },
       },
       animation: {
